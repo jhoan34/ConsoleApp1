@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.IO;
 
+
+// jhoan sebastian garzon monsalve
 class Program
 {
     static void Main(string[] args)
@@ -19,7 +21,7 @@ class Program
 
                 if (numbers.Contains(input))
                 {
-                    Console.WriteLine("Error: Duplicate numbers are not allowed. Try again.");
+                    Console.WriteLine("Error: Duplicate numbers.");
                 }
                 else
                 {
@@ -74,9 +76,7 @@ class Program
             Console.Write(num + " ");
         }
 
-        Console.WriteLine("\nSaving results to 'sorted_numbers.txt'...");
-        File.WriteAllLines("sorted_numbers.txt", sortedNumbers.ConvertAll(x => x.ToString()));
-        Console.WriteLine("Results saved successfully.");
+
     }
 
     // Bubble Sort
